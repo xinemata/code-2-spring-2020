@@ -33,8 +33,7 @@
 
     <div class="content">
       <h1>Project #1 Modular Animation</h1>
-      <iframe src="https://editor.p5js.org/xinxin/embed/9bUX2-N0K"></iframe>
-      <p>&#8627; click on screen to start animation.</p>
+
       <h2>Description</h2>
 
       <p>
@@ -324,35 +323,39 @@
       <a href="https://editor.p5js.org/xinxin/sketches/-uliLUmcU"
         >Link to Source Code</a
       >
-      <!--       <p>
-        However, you might find the conditional statements limiting when you
-        want to choreograph a more complicated animation. See the example below,
-        what if we want the ball to coontinously bounce between A - B - A - C -
-        A, and continuosloy drawing an "L" on the screen?
-      </p>
-
-      <iframe src="https://editor.p5js.org/xinxin/embed/6rD8OGH64"></iframe>
-
-      <p>
-        This takes a bit of creativity -- when the ellipse returns to A the
-        second time, we have to find a way to tell it to go up to C instead of
-        back to B. One way to approach this is to create a boolean variable, so
-        that an additional true / false condition can let the computer know when
-        to go to B and when to go to C under the condition of x == 50. However,
-        for this project you will learn how to use the switch statement to solve
-        a problem like this.
-      </p> -->
 
       <h3>JavaScript switch Statement</h3>
 
       <p>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
-          >More information on switch</a
-        >
+        The switch statement is a type of conditional statement that is often used in programming to buildg a finite state machine (FSM). Different from an If / Else conditional statement which only executes a statement if an expression is true, a switch statement matches the expression with the case name and executes statements associate with the specific case. For example:
       </p>
+      <script src="https://gist.github.com/xinemata/001f80b03f6841aeb66a1600c78c7589.js"></script>
+      <p>
+        This block of code uses the variable <i>num</i> as the expression in the switch statement. Whenever <i>num</i> matches the case name, the program will execute the corresponding statement under the <i>case</i>. When num matches none of the case name, the program would execute the statement under <i>default</i>.   
+      </p>
+      <iframe src="https://editor.p5js.org/xinxin/embed/eh_gS-2bA"></iframe>
+        <p>&#8627; click on screen to start animation.</p>
+               <a href="https://editor.p5js.org/xinxin/sketches/eh_gS-2bA"
+          >Link to Source Code</a
+        >
+      
+      <p>
+        Here are examples of creating animation using switch. You can think about each of the case as a keyframe, and figure out what needs to go under the case to make the shape transition into the next stage. 
+      </p>
+      <iframe src="https://editor.p5js.org/xinxin/embed/9bUX2-N0K"></iframe>
+       <p>&#8627; click on screen to start animation.</p>
+           <a href="https://editor.p5js.org/xinxin/sketches/9bUX2-N0K"
+          >Link to Source Code</a
+        >
+   
       <iframe src="https://editor.p5js.org/xinxin/embed/GCqaGeo3r"></iframe>
       <p>&#8627; click on screen to start animation.</p>
+          <a href="https://editor.p5js.org/xinxin/sketches/GCqaGeo3r"
+          >Link to Source Code</a
+        >
+      <p>
+        For the sake of clarity, I'm using mousePressed() to progress <i>num</i> in these examples. However you could also use <a href="https://p5js.org/reference/#/p5/millis">millis()</a> or <a href="https://p5js.org/reference/#/p5/frameCount">frameCount()</a> to create a timed animation. 
+      </p>
 
       <h3>Smoothing Animation Using lerp()</h3>
       <p>
@@ -373,7 +376,7 @@
       <p>
         By using lerp(), we can calculate a number (<i>myVariable</i>) between
         two numbers (<i>start</i>, <i>stop</i>) at a specific increment
-        (<i>amt</i>). Notice
+        (<i>amt</i>). Try increasing / decresing the <i>amt</i> in the source code and see what happens.
       </p>
       <div class="full-width-box">
         <script src="https://gist.github.com/xinemata/4c852527bb0683e82ae9c40ffb751b67.js"></script>
@@ -381,8 +384,6 @@
           >Link to Source Code</a
         >
       </div>
-
-      <h3>sin(), cos()</h3>
 
       <h3>map()</h3>
 
@@ -449,10 +450,15 @@
       <iframe src="https://editor.p5js.org/xinxin/embed/jPlyTTyZ"></iframe>
         <p>&#8627; change value by dragging the slider.</p>
             <a href="https://editor.p5js.org/xinxin/sketches/jPlyTTyZ">Link to Source Code</a>
-      
-      <h3>constrain()</h3>
-
-      <h3>Camera()</h3>
+           
+<!--       <h3>sin(), cos()</h3>
+        <div class="full-width-box">
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Sinus_und_Kosinus_am_Einheitskreis_1.svg/500px-Sinus_und_Kosinus_am_Einheitskreis_1.svg.png">
+      </div>
+       <iframe style = "height:550px" src="https://www.mathsisfun.com/algebra/icircle-triangle.html"></iframe>
+              <div class="full-width-box">
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/3/3b/Circle_cos_sin.gif">
+      </div> -->
 
       <h1>FAQ</h1>
 
