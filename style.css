@@ -1,6 +1,6 @@
 /* CSS files add styling rules to your content */
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
 body {
   font-family: "Inconsolata", monospace;
@@ -12,13 +12,25 @@ body {
 h1 {
   color: #373fff;
   font-size: 18pt;
-  
 }
 
-h2{
-  font-size:18pt;
-/*   margin:0;
-  padding:0; */
+h2 {
+  font-size: 18pt;
+}
+
+button {
+  font-family: "Inconsolata", monospace;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  width: 100%;
+  /*   text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 2px;
+  cursor: pointer;
 }
 
 p {
@@ -31,7 +43,7 @@ p {
   padding: 1% 1% 1% 0;
   float: left;
   display: inline-block;
-/*   background-color: red; */
+  /*   background-color: red; */
 }
 
 .center {
@@ -54,7 +66,7 @@ p {
   height: 100%;
   display: inline-block;
   float: left;
-/*     background-color:red; */
+  /*     background-color:red; */
 }
 
 .content {
@@ -77,13 +89,12 @@ li {
 }
 
 li.bullet {
-  list-style-type: '- ';
-  margin:1%;
-  padding:0;
-  
+  list-style-type: "- ";
+  margin: 1%;
+  padding: 0;
 }
 
-li.bullet a{
+li.bullet a {
   color: blue;
 }
 
@@ -170,7 +181,33 @@ body .gist .gist-meta {
   line-height: 27px;
   cursor: pointer;
 }
-.nav-link a, .nav-link a:visited {
+.nav-link a,
+.nav-link a:visited {
   color: black;
-  text-decoration: none;  
+  text-decoration: none;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Inconsolata", monospace;
+    margin: 1%;
+    width: 98%;
+    height: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    float: left;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

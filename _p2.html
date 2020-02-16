@@ -9,9 +9,8 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- import the webpage's javascript + jQuery file -->
+    <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    <script src="jquery-3.4.1.min.js"></script>
   </head>
 
   <body>
@@ -67,7 +66,6 @@
 
       <h2>Reading</h2>
       <p>
-        (1)
         <a
           href="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FBruno-Munari-The-Shape-of-Words-and-Poems-and-Telegrams-in-Design-as-Art-1971.pdf?v=1580942242488"
           >Design as Art (excerpt)</a
@@ -75,22 +73,6 @@
         by Bruno Munari
       </p>
 
-      <h2>Further Readings</h2>
-      <p>
-        (1)
-        <a
-          href="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FGenerativeDesign_Project2.pdf?v=1581558934483"
-          >Generative Design: Type (excerpt)</a
-        >
-        accomodated by
-        <a href="http://www.generative-gestaltung.de/2/#sketches">p5 examples</a
-        >, Benedikt Gross, Julia Laub, Claudius Lazzeroni, Hartmut Bohnacker
-        <br />
-        (2)
-        <a href="https://www.youtube.com/watch?v=4hA7G3gup-4"
-          >Steering Behavior</a
-        >, Coding Train Dan Shiffman
-      </p>
       <h2>Timeline & Deliverables</h2>
       <p>
         Feb 12: Pick three words and create nine iterative prototypes in p5.js
@@ -103,7 +85,7 @@
         Nine iterative prototypes: submit your “Edit” sketch links to Canvas
         <br />
         Finalized sketches: submit your finalized sketches to Canvas as well as
-        the <a href="https://glitch.com/edit/#!/join/a4cb2927-22cd-4e21-91c2-7b193fb235c5">Project #2 Glitch page</a> for presentation purposes
+        the Project #2 Glitch page for presentation purposes
       </p>
 
       <h2>Design Constraints</h2>
@@ -145,8 +127,7 @@
         by Peter Cho
         <br />
         (8) <a href="https://paperdove.com/">Interactive posters</a> by Dae In
-        Chung <br />
-        (9)
+        Chung <br / > (9)
         <a href="https://www.moonjang.com/here-now-and-waiting"
           >Here, Now, and Waiting</a
         >
@@ -154,34 +135,17 @@
       </p>
 
       <h1>Study Guide</h1>
-      <h2>
-        Table of Content
-      </h2>
-      <p>
-      (1) <a href="#basic">textToPoints() Basics</a><br />
-      (2) <a href="#morph">textToPoints() Morph</a><br />
-      (3) <a href="#class">textToPoints() + Classes and Objects</a><br />
-      (4) <a href="#splice"
-        >Removing / Adding / Swapping Objects Using JavaScript splice()</a
-      >
-          </p>
 
-      <div id="basic"><h2>textToPoints() Basics</h2></div>
+      <h2>Tutorials</h2>
 
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/wbDF6xcgvV8"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <h3>textToPoints() Basics</h3>
+      <iframe src="https://editor.p5js.org/xinxin/embed/uznuyg8H"></iframe>
       <p>
         <a href="https://p5js.org/reference/#/p5.Font/textToPoints"
           >textToPoints()</a
         >
-        is a method in p5 that converts text into points on the screen. It’s an
-        exciting feature that will allow us to manipulate type in new and
+        is a function in p5 that converts text into points on the screen. It’s
+        an exciting feature that will allow us to manipulate type in new and
         surprising ways. In order for textToPoints() to work, you have to use a
         specific font format called OpenType font (OTF) in your sketches. Here
         are a couple direct links for you to download OTF fonts:
@@ -206,10 +170,9 @@
           >
         </li>
       </ul>
-      <!--             <iframe src="https://editor.p5js.org/xinxin/embed/uznuyg8H"></iframe> -->
-      <h3>
+      <h4>
         Loading Font
-      </h3>
+      </h4>
 
       <p>
         Once you download the files to your computer, open the p5 web editor. Go
@@ -236,9 +199,9 @@
       </p>
       <script src="https://gist.github.com/xinemata/044b9377547ce54ebf49269a3cd38a9c.js"></script>
 
-      <h3>
+      <h4>
         Displaying Font
-      </h3>
+      </h4>
 
       <p>
         Once you have your OTF font loaded we can begin to display it. You can
@@ -296,7 +259,7 @@
         />
       </div>
       <p>
-        Turns out that our <i>hiArray</i> variable has taken all the verticies
+        Turns out that our <i>hiArray</i> variable has taken all the vertecies
         from the text and turned it into an array of objects. Each of these
         objects inside the array contains a variable x, a variable y, and a
         variable alpha. Being able to access these variables mean that we can
@@ -309,10 +272,8 @@
         the text, we can use a for Loop to pull all the x and y values out of
         <i>hiArray</i> to draw ellipses:
       </p>
-      <div class="full-width-box">
-        <script src="https://gist.github.com/xinemata/6eb2b2befa0e83f7a6af86999c9a1976.js"></script>
-      </div>
-      <iframe src="https://editor.p5js.org/xinxin/embed/7dPqCCYF"></iframe>
+
+      <script src="https://gist.github.com/xinemata/6eb2b2befa0e83f7a6af86999c9a1976.js"></script>
       <a href="https://editor.p5js.org/xinxin/sketches/7dPqCCYF"
         >Link to Source Code</a
       >
@@ -322,19 +283,18 @@
         the ellipse into other types of 2D primitives and begin code sketching
         and creating iterations. Check out more examples
         <a href="https://editor.p5js.org/xinxin/sketches/J4M1_9jz">here</a> and
-        <a href="https://editor.p5js.org/xinxin/sketches/caCf7jTE">here</a> and
-        <a href="https://editor.p5js.org/xinxin/sketches/S_pEGueX">here</a>!
+        <a href="https://editor.p5js.org/xinxin/sketches/caCf7jTE">here</a>!
       </p>
 
-      <h3>Changing Number of Verticies</h3>
+      <h4>Changing Number of Vertecies</h4>
 
       <p>
         Once you've gotten comfortable with the ideas above, let's try changing
-        the number of verticies in your text. This can be achieved simply by
+        the number of vertecies in your text. This can be achieved simply by
         changing the sampleFactor parameter inside textToPoints():
       </p>
       <iframe src="https://editor.p5js.org/xinxin/embed/4jQwsJvN"></iframe>
-      <p>&#8627; use UP / DOWN keys to adjust the number of verticies.</p>
+      <p>&#8627; use UP / DOWN keys to adjust the number of vertecies.</p>
 
       <script src="https://gist.github.com/xinemata/cb4c7a6e979a9c76f3b88fe7afc31602.js"></script>
       <a href="https://editor.p5js.org/xinxin/sketches/4jQwsJvN"
@@ -347,7 +307,7 @@
         within a decimal range.
       </p>
 
-      <h3>Connecting the Verticies using beginShape() and endShape()</h3>
+      <h3>Connecting the Vertecies using beginShape() and endShape()</h3>
 
       <p>
         You might remember this childhood game called Connect the Dots. It is a
@@ -362,11 +322,11 @@
       <p>
         textToPoints() operates on a similar logic &mdash; it reveals the dots
         that crawl along the shape of the text. So what if you want to connect
-        all the verticies together using an outline? A great p5 feature we could
+        all the vertecies together using an outline? A great p5 feature we could
         use here is something called
         <a href="https://p5js.org/reference/#/p5/beginShape"
           >beginShape() and endShape()</a
-        >. These are magical functions that connect verticies into a complex
+        >. These are magical functions that connect vertecies into a complex
         shape. Usually it is written this way:
       </p>
 
@@ -392,106 +352,9 @@
         to separate the "h" and the "i".
       </p>
 
-      <div id="morph"><h2>textToPoints() Morph</h2></div>
-
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/G6o_BZqSkSw"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
-        Now that you know how to change the number of verticies in a letter and
-        using beginShape() and endShape() to connect the dots, we are going to
-        try something exciting. What about creating a morphing effect that would
-        transform one letter into another letter? <br />
-        <br />
-      </p>
-      <video width="400" height="400" controls>
-        <source
-          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F52462620_554987191645277_1306728089549977967_n.mp4?v=1581475453046"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-
-      <video width="400" height="400" controls>
-        <source
-          src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F62062766_380332689248141_4257769537732083712_n.mp4?v=1581475687428"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <p>Code sketches by Laurent Malys @laurent.malys</p>
-
-      <p>
-        There are a couple steps we need to take here. First, load and display
-        your OTF font. Then create two empty array global varialbes at the top
-        to hold our textToPoinst() objects. This way we can access the objects
-        outside of <i>setup()</i> later. <br />
-        <br />
-        Next, we have to make sure that the number of verticies in the first
-        letter matches the number of verticies in the second letter, so that
-        each vertex has an ending position to move towards. We will achieve this
-        by tweaking the sampleFactor values of the letter one and letter two
-        until they match. Note that whenever you change the font size or the
-        string, the number of verticies on your text will change.
-      </p>
-
-      <script src="https://gist.github.com/xinemata/eda5b96b671aebdcde01e820435ddc63.js"></script>
-
-      <p>
-        Now, let's use the beginShape() technique we've learned from the
-        previous chapter to connect all the verticies around the first letter
-        inside draw().
-      </p>
-      <script src="https://gist.github.com/xinemata/558b6fee2ed7bb391f81691aa307819a.js"></script>
-
-      <p>
-        The next step is to make all the x and y in the first letter to move
-        towards all the x and y inside the second letter. We can do this through
-        if statements.
-      </p>
-      <script src="https://gist.github.com/xinemata/180aa101b950087ac00bfb94ee16bc40.js"></script>
-      <a href="https://editor.p5js.org/xinxin/sketches/1pFEkmpH"
-        >Link to Source Code</a
-      >
-      <h3>
-        Using loop() and noLoop() to Start / Pause the Sketch
-      </h3>
-      <iframe src="https://editor.p5js.org/xinxin/embed/ghTSEmT6"></iframe>
-      <p>&#8627; click to begin morphing; click to pause transformation</p>
-      <p>
-        We have been taught that draw() runs a loop and executes the code
-        repetitively. However there is a way to pause draw() and start it again
-        by using
-        <a href="https://p5js.org/reference/#/p5/noLoop">noLoop()</a> and
-        <a href="https://p5js.org/reference/#/p5/loop">loop()</a>. <br /><br />
-
-        Try adding this line at the bottom of your setup():
-      </p>
-      <script src="https://gist.github.com/xinemata/aac9200a3daf161ee787880646531e67.js"></script>
-      <p>
-        Your sketch should draw the first letter but stop after that. This means
-        the code inside draw() has been executed once but won't be looping. Now
-        let's incroporate a mousePressed() function so that the sketch would
-        start looping when mouse is pressed.
-      </p>
-
-      <script src="https://gist.github.com/xinemata/e8aa21260efd8a863e6147b341caf3b3.js"></script>
-
-      <p>
-        The <i>play</i> boolean variable is initated as <i>false</i>, and when
-        mouse is pressed, <i>play</i> becomes true. And if statement follows it
-        to make draw() loops if <i>play</i> becomes <i>true</i>. Sweet!
-      </p>
-      <a href="https://editor.p5js.org/xinxin/sketches/ghTSEmT6"
-        >Link to Source Code</a
-      >
-
-      <div id="class"><h2>textToPoints() + Classes and Objects</h2></div>
+      <h4>
+        Morphing Using Classes and Objects
+      </h4>
 
       <iframe src="https://editor.p5js.org/xinxin/embed/pqrsbqcl"></iframe>
       <p>&#8627; click to "mop" the screen</p>
@@ -556,7 +419,7 @@
         finished the setup for M. The next challenge is for you to repeat the
         steps to set up O and P. Don't forget to adjust the
         <i>sampleFactor</i> for each of the letter so that the numbers of
-        verticies match.
+        vertecies match.
       </p>
 
       <p>
@@ -592,143 +455,71 @@
         a way for P to loop back to M instead of stopping. Can you figure out
         how to make the sketch loop? (hint: there are more than one answers)
       </p>
-      <a href="https://editor.p5js.org/xinxin/sketches/pqrsbqcl"
+           <a href="https://editor.p5js.org/xinxin/sketches/pqrsbqcl"
         >Link to Source Code</a
       >
-      <h2>Adding Behaviors</h2>
+      
+      <h3>Text Along the Curve</h3>
+      <h4>Boxes Along the Curve</h4>
       <p>
-        Now that you know how to combine textToPoints() with classes and
-        objects, you can reflect on the different amazing things you did with
-        classes and objects in Code 1 and think about the behaviors you could
-        add onto your prototypes. Here's an example that uses dist() to contain
-        a swarm of circles inside the text:
+        To keep things simple, let's create a white-boxed version of text along
+        the curve using rect() first.
       </p>
-      <iframe src="https://editor.p5js.org/xinxin/embed/m3g1yYZW"></iframe>
-      <a href="https://editor.p5js.org/xinxin/sketches/m3g1yYZW"
-        >Link to Source Code</a
-      >
-      <div id="splice">
-        <h2>Removing / Adding / Swapping Objects Using JavaScript splice()</h2>
+      <iframe src="https://editor.p5js.org/xinemata/embed/lyXf9SNF"></iframe>
+      <h4>Use JavaScript charAt() to Treat a String as an Array of Chars</h4>
+      <div class="full-width-box">
+        <script src="https://gist.github.com/xinemata/6a6b79c7242adb24853211f6f569ee9d.js"></script>
       </div>
+      <iframe src="https://editor.p5js.org/xinemata/embed/nqTeL89x"></iframe>
+      <h4>Combine Everything!</h4>
+      <iframe src="https://editor.p5js.org/xinemata/embed/n2LosuYn"></iframe>
 
-      <p>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
-          >JavaScript splice()</a
-        >
-        makes it very easy to remove, add and swap objects inside an array. The
-        syntax for splice() is:
-      </p>
+      <div class="full-width-box">
+        <script src="https://gist.github.com/xinemata/118ab653c6a59dbe437bb869ca5d1f11.js"></script>
+      </div>
+      <h3>Next Week</h3>
+      <iframe src="https://editor.p5js.org/xinxin/embed/8HR7jS5Y"></iframe>
 
-      <script src="https://gist.github.com/xinemata/eb2347b3570d9a86c88fc6cc781fb7f9.js"></script>
-      <p>
-        There are three parameters inside splice(). Let's break it down one by
-        one:
-      </p>
+      <h3>Text Along the Curve</h3>
 
-      <ul>
-        <li>(1) start: the index at which to start changing the array.</li>
-        <li>
-          (2) deleteCount: the number of items to remove from the array. Put 0
-          here if you don't want to remove an item.
-          <b>This parameter is optional.</b>
-        </li>
-        <li>
-          (3) item1, item2 ...: The elements to add to the array, beginning from
-          start. If you do not specify any elements, splice() will only remove
-          elements from the array. <b>This parameter is optional.</b>
-        </li>
-      </ul>
-      <h3>
-        Removing Objects
-      </h3>
+      <h4>Boxes Along the Curve</h4>
+      <p>
+        To keep things simple, let's create a white-boxed version of text along
+        the curve using rect() first.
+      </p>
+      <iframe src="https://editor.p5js.org/xinemata/embed/lyXf9SNF"></iframe>
+      <h4>Use JavaScript charAt() to Treat a String as an Array of Chars</h4>
+      <div class="full-width-box">
+        <script src="https://gist.github.com/xinemata/6a6b79c7242adb24853211f6f569ee9d.js"></script>
+      </div>
+      <iframe src="https://editor.p5js.org/xinemata/embed/nqTeL89x"></iframe>
+      <h4>Combine Everything!</h4>
+      <iframe src="https://editor.p5js.org/xinemata/embed/n2LosuYn"></iframe>
 
-      <iframe src="https://editor.p5js.org/xinxin/embed/YeVK9DSt"></iframe>
-      <p>&#8627; click to remove / replenish ellipses</p>
-      <p>
-        When you want to remove objects from an array, you only need to use the
-        first and second parameters in splice(). For example, here's a row of
-        ellipses created using class and objects:
-      </p>
-      <script src="https://gist.github.com/xinemata/2f5ae442a42c3b4867358cce50fa8aba.js"></script>
+      <div class="full-width-box">
+        <script src="https://gist.github.com/xinemata/118ab653c6a59dbe437bb869ca5d1f11.js"></script>
+      </div>
+      <!--       <iframe src="https://editor.p5js.org/xinxin/embed/8HR7jS5Y"></iframe> -->
 
-      <p>
-        Let's add a mousePressed function, so that every time mouse is pressed,
-        an ellipse is removed from the array.
-      </p>
-      <script src="https://gist.github.com/xinemata/5363e03dedc6b5f15863231597f483df.js"></script>
-      <p>
-        Great! Now let's iterate the code so that when all the ellipses are
-        removed from the array, we replenish the ellipses by re-creating the
-        array of objects.
-      </p>
-      <script src="https://gist.github.com/xinemata/06d451cb094294b6a1f9ade96a8f5718.js"></script>
-      <a href="https://editor.p5js.org/xinxin/sketches/YeVK9DSt"
-        >Link to Source Code</a
-      >
-      <p>
-        Now that you've learned the basic concept, take a look at this example
-        that removes the outline of the letter M upon contact with the
-        particles.
-      </p>
-      <iframe src="https://editor.p5js.org/xinxin/embed/0DaIvB9_"></iframe>
-      <a href="https://editor.p5js.org/xinxin/sketches/0DaIvB9_"
-        >Link to Source Code</a
-      >
-      <h3>
-        Swapping Objects
-      </h3>
-      <iframe src="https://editor.p5js.org/xinxin/embed/RI9XB7RH"></iframe>
-      <p>&#8627; click to swap / replenish objects</p>
-      <p>
-        When you want to swap objects inside an array, you will indicate the
-        number of arrays you want to remove in the second parameter and enter
-        object(s) in the third parameter and beyond. In this example we want to
-        create a <i>class Bubble</i> and a <i>class Box</i>, each producing an
-        array of objects. Then inside mousePressed() we will instruct the
-        program to swap the ellipses and the boxes upon mouse clicks:
-      </p>
-      <script src="https://gist.github.com/xinemata/e0276bdc2a27ada1a6545a06918aa4f9.js"></script>
+      <h1>FAQ</h1>
 
+      <h2>Q: What is polar coordinate system?</h2>
+      <div class="full-width-box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Polar_graph_paper.svg/300px-Polar_graph_paper.svg.png"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Examples_of_Polar_Coordinates.svg/500px-Examples_of_Polar_Coordinates.svg.png"
+        />
+      </div>
       <p>
-        Inside draw(), you have to create two separate for Loops to show the
-        bubbles and the boxes. However, you don't want to show all of the boxes
-        at once. You only want to show them when they match the index number of
-        the bubbles.
+        We have been using the Cartesian coordinate system in p5.js, where every
+        position is described by its x and y values on the plane. Contrary to
+        the Cartesian coordinate system, the polar coordinate system describes
+        the position using (1) distance from the center and (2) degrees of
+        angle. The syntax for the polar coordinate system is (distance from the
+        center, degrees of angle).
       </p>
-      <script src="https://gist.github.com/xinemata/7523947dc62c16678d997870762dee58.js"></script>
-      <p>
-        If you're slightly confused by the if statement here, visit
-        <a href="https://editor.p5js.org/xinxin/sketches/4nfqUfNC"
-          >the link to source code</a
-        >
-        and try to print out the <i>bubbles</i> and <i>boxes</i> arrays in the
-        console and compare how they change when you click on the screen.
-      </p>
-
-      <p>
-        Once you've grasped the basic concept, take a look at this example that
-        swap the rectangles around the M to ellipses.
-      </p>
-      <iframe src="https://editor.p5js.org/xinxin/embed/4nfqUfNC"></iframe>
-
-      <a href="https://editor.p5js.org/xinxin/sketches/4nfqUfNC"
-        >Link to Source Code</a
-      >
-
-      <h3>
-        Adding Objects
-      </h3>
-
-      <p>
-        Adding objects uses the nearly identical code as the previous example.
-        Can you take a look at the source code below and figure out what the
-        differences are?
-      </p>
-      <iframe src="https://editor.p5js.org/xinxin/embed/SG1n1WGq"></iframe>
-      <a href="https://editor.p5js.org/xinxin/sketches/SG1n1WGq"
-        >Link to Source Code</a
-      >
     </div>
   </body>
 </html>
