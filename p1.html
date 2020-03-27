@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -24,8 +24,9 @@
             >Syllabus</a
           >
         </li>
-          <li>
-          Projects <a href="p1.html">#1</a> <a href="p2.html">#2</a> #3 #4 #5
+        <li>
+          Projects <a href="p1.html">#1</a> <a href="p2.html">#2</a>
+          <a href="p3.html">#3</a> <a href="p4.html">#4</a> #5
         </li>
         <li><a href="events.html">Public Events</a></li>
         <li><a href="readings.html">References</a></li>
@@ -71,12 +72,17 @@
         <a href="https://p5js.org/reference/#/p5/blendMode">p5 blend mode</a> to
         "mix" additional colors<br />
       </p>
-      
-          <h2>References</h2>
+
+      <h2>References</h2>
       <p>
         (1)
         <a href="https://sasj.tumblr.com/">Daily Art</a> by Saskia Freeke
         <br />
+        (2)
+        <a href="https://dpmanual.bitbucket.io/pages/programs.html#"
+          >Computational Graphic Design Manual</a
+        >
+        by mark webster
       </p>
 
       <h2>Resources</h2>
@@ -336,34 +342,49 @@
       <h3>JavaScript switch Statement</h3>
 
       <p>
-        The switch statement is a type of conditional statement that is often used in programming to buildg a finite state machine (FSM). Different from an If / Else conditional statement which only executes a statement if an expression is true, a switch statement matches the expression with the case name and executes statements associate with the specific case. For example:
+        The switch statement is a type of conditional statement that is often
+        used in programming to buildg a finite state machine (FSM). Different
+        from an If / Else conditional statement which only executes a statement
+        if an expression is true, a switch statement matches the expression with
+        the case name and executes statements associate with the specific case.
+        For example:
       </p>
       <script src="https://gist.github.com/xinemata/001f80b03f6841aeb66a1600c78c7589.js"></script>
       <p>
-        This block of code uses the variable <i>num</i> as the expression in the switch statement. Whenever <i>num</i> matches the case name, the program will execute the corresponding statement under the <i>case</i>. When num matches none of the case name, the program would execute the statement under <i>default</i>.   
+        This block of code uses the variable <i>num</i> as the expression in the
+        switch statement. Whenever <i>num</i> matches the case name, the program
+        will execute the corresponding statement under the <i>case</i>. When num
+        matches none of the case name, the program would execute the statement
+        under <i>default</i>.
       </p>
       <iframe src="https://editor.p5js.org/xinxin/embed/eh_gS-2bA"></iframe>
-        <p>&#8627; click on screen to start animation.</p>
-               <a href="https://editor.p5js.org/xinxin/sketches/eh_gS-2bA"
-          >Link to Source Code</a
-        >
-      
+      <p>&#8627; click on screen to start animation.</p>
+      <a href="https://editor.p5js.org/xinxin/sketches/eh_gS-2bA"
+        >Link to Source Code</a
+      >
+
       <p>
-        Here are examples of creating animation using switch. You can think about each of the case as a keyframe, and figure out what needs to go under the case to make the shape transition into the next stage. 
+        Here are examples of creating animation using switch. You can think
+        about each of the case as a keyframe, and figure out what needs to go
+        under the case to make the shape transition into the next stage.
       </p>
       <iframe src="https://editor.p5js.org/xinxin/embed/9bUX2-N0K"></iframe>
-       <p>&#8627; click on screen to start animation.</p>
-           <a href="https://editor.p5js.org/xinxin/sketches/9bUX2-N0K"
-          >Link to Source Code</a
-        >
-   
+      <p>&#8627; click on screen to start animation.</p>
+      <a href="https://editor.p5js.org/xinxin/sketches/9bUX2-N0K"
+        >Link to Source Code</a
+      >
+
       <iframe src="https://editor.p5js.org/xinxin/embed/GCqaGeo3r"></iframe>
       <p>&#8627; click on screen to start animation.</p>
-          <a href="https://editor.p5js.org/xinxin/sketches/GCqaGeo3r"
-          >Link to Source Code</a
-        >
+      <a href="https://editor.p5js.org/xinxin/sketches/GCqaGeo3r"
+        >Link to Source Code</a
+      >
       <p>
-        For the sake of clarity, I'm using mousePressed() to progress <i>num</i> in these examples. However you could also use <a href="https://p5js.org/reference/#/p5/millis">millis()</a> or <a href="https://p5js.org/reference/#/p5/frameCount">frameCount()</a> to create a timed animation. 
+        For the sake of clarity, I'm using mousePressed() to progress
+        <i>num</i> in these examples. However you could also use
+        <a href="https://p5js.org/reference/#/p5/millis">millis()</a> or
+        <a href="https://p5js.org/reference/#/p5/frameCount">frameCount()</a> to
+        create a timed animation.
       </p>
 
       <h3>Smoothing Animation Using lerp()</h3>
@@ -385,7 +406,8 @@
       <p>
         By using lerp(), we can calculate a number (<i>myVariable</i>) between
         two numbers (<i>start</i>, <i>stop</i>) at a specific increment
-        (<i>amt</i>). Try increasing / decresing the <i>amt</i> in the source code and see what happens.
+        (<i>amt</i>). Try increasing / decresing the <i>amt</i> in the source
+        code and see what happens.
       </p>
       <div class="full-width-box">
         <script src="https://gist.github.com/xinemata/4c852527bb0683e82ae9c40ffb751b67.js"></script>
@@ -448,26 +470,28 @@
       <div class="full-width-box">
         <script src="https://gist.github.com/xinemata/a6b56bcf55a877fe0d79e5a6c9e22cd3.js"></script>
       </div>
-      <a href="https://editor.p5js.org/xinxin/sketches/VdQVV3y9">Link to Source Code</a>
+      <a href="https://editor.p5js.org/xinxin/sketches/VdQVV3y9"
+        >Link to Source Code</a
+      >
       <p>
-        This sketch maps the range between <i>minHour</i> and <i>maxHour</i> onto <i>minMinute</i> and <i>maxMinute</i>. Then it takes <i>currentHour</i>, a value indicated by <a href="https://p5js.org/reference/#/p5/hour">p5 hour()</a> and get the result of <i>hourToMinute</i>. 
+        This sketch maps the range between <i>minHour</i> and
+        <i>maxHour</i> onto <i>minMinute</i> and <i>maxMinute</i>. Then it takes
+        <i>currentHour</i>, a value indicated by
+        <a href="https://p5js.org/reference/#/p5/hour">p5 hour()</a> and get the
+        result of <i>hourToMinute</i>.
       </p>
-      
-            <p>
-        Once you get the basic ideas of map(), you might wonder what else this is good for. The possibilities are endless, and you might have to encounter an actual problem to realize how useful map() is. One of the practical applications of map() is to make a slider:
+
+      <p>
+        Once you get the basic ideas of map(), you might wonder what else this
+        is good for. The possibilities are endless, and you might have to
+        encounter an actual problem to realize how useful map() is. One of the
+        practical applications of map() is to make a slider:
       </p>
       <iframe src="https://editor.p5js.org/xinxin/embed/jPlyTTyZ"></iframe>
-        <p>&#8627; change value by dragging the slider.</p>
-            <a href="https://editor.p5js.org/xinxin/sketches/jPlyTTyZ">Link to Source Code</a>
-           
-<!--       <h3>sin(), cos()</h3>
-        <div class="full-width-box">
-      <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Sinus_und_Kosinus_am_Einheitskreis_1.svg/500px-Sinus_und_Kosinus_am_Einheitskreis_1.svg.png">
-      </div>
-       <iframe style = "height:550px" src="https://www.mathsisfun.com/algebra/icircle-triangle.html"></iframe>
-              <div class="full-width-box">
-      <img src = "https://upload.wikimedia.org/wikipedia/commons/3/3b/Circle_cos_sin.gif">
-      </div> -->
+      <p>&#8627; change value by dragging the slider.</p>
+      <a href="https://editor.p5js.org/xinxin/sketches/jPlyTTyZ"
+        >Link to Source Code</a
+      >
 
       <h1>FAQ</h1>
 

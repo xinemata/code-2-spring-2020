@@ -18,7 +18,12 @@ h2 {
   font-size: 18pt;
 }
 
-button {
+h5{
+  font-size:12pt;
+  background-color:lightyellow;
+}
+
+/* button {
   font-family: "Inconsolata", monospace;
   background-color: black;
   border: none;
@@ -31,11 +36,11 @@ button {
   font-size: 16px;
   margin: 30px 2px;
   cursor: pointer;
-}
+} */
 
 p {
   font-size: 12pt;
-  line-height: 18pt;
+  line-height: 20pt;
 }
 
 .left {
@@ -61,20 +66,20 @@ p {
 }
 
 .nav {
+  position:fixed;
   padding: 2%;
   width: 26%;
   height: 100%;
   display: inline-block;
   float: left;
-  /*     background-color:red; */
 }
 
 .content {
   padding: 2%;
-  width: 66%;
+  margin-right:6%;
+  width: 60%;
   display: inline-block;
   float: right;
-  /*   background-color:yellow; */
 }
 
 ul {
@@ -199,6 +204,7 @@ body .gist .gist-meta {
     height: 100%;
   }
   .nav {
+    position:relative;
     width: 100%;
   }
   .content {
@@ -210,4 +216,13 @@ body .gist .gist-meta {
     width: 100%;
     height: auto;
   }
+}
+
+canvas {
+  display: block;
+}
+
+#p5pos {
+  width:100%;
+  float:right;
 }
