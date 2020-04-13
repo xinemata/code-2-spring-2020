@@ -776,7 +776,7 @@
         as a pointillist portrait. We will combine createCapture() + get() to
         acheive the effect.
       </p>
-    
+
       <a href="https://editor.p5js.org/xinxin/sketches/iI0d5qWf6"
         >Source Code</a
       >
@@ -786,49 +786,93 @@
       </h2>
 
       <p>
-        <a href="https://p5js.org/reference/#/p5/loadPixels">loadPixels()</a>
-        and
+        In the last section we have covered the fact that every pixel contains
+        an array of [R, G, B, A] values. Now we are going to talk about
+        <a href="https://p5js.org/reference/#/p5/pixels">pixels[]</a>, which is
+        another way to <i>write</i> pixel values into your program. Its purpose
+        is identical to set(), however the performance speed is faster, and
+        that's useful for when you need to make a lot of modifications to the
+        pixel array.
       </p>
 
       <h3>
-       Pixel Array
+        Pixel Array
       </h3>
 
+      <iframe src="https://editor.p5js.org/xinxin/embed/N0jYFxmDS"></iframe>
       <p>
-        Pixel Array
+        In this example, we will combine pixel[] and a nested for Loop to create
+        a gradient image as shwon above. But first, you should call
+        <a href="https://p5js.org/reference/#/p5/loadPixels">loadPixels()</a>
+        in the beginning of draw() and
+        <a href="https://p5js.org/reference/#/p5/updatePixels"
+          >updatePixels()</a
+        >
+        at the end of draw(). These functions help loading the displaying the
+        pixels onto the canvas.
       </p>
 
-      <iframe src="https://editor.p5js.org/xinxin/embed/N0jYFxmDS"></iframe>
-      <a href="https://editor.p5js.org/xinxin/sketches/N0jYFxmDS"
-        >Source Code</a
-      >
+      <script src="https://gist.github.com/xinemata/c6a29744cd013405aaaf31de1232d86f.js"></script>
+
       <p>
-        If you have a high pixel density display such as a retina screen, you
-        will see the pixels only filling part of the screen instead of all of
-        the screen. Because by default, pixel density in p5 i set to match the
-        display density.
+        And now here's the fun part. We're going to use a nested for Loop to
+        draw a grid of pixels. And we're going to use <i>let index</i> to count
+        every row of the pixel grid.
       </p>
-      
-      <div class ="full-width-box">
-            <img style ="height:200px"src = "https://u01.appmifile.com/images/2018/07/11/d90c3f77-3c4b-40b5-b657-40273be7981b.png">        
-      </div>
-      
+
+      <script src="https://gist.github.com/xinemata/2d5969cdb26b8662b9d95257cae1bb72.js"></script>
+
       <p>
-        To turn it off, you could set
+        If you're confused by what's going on inside the for Loop, here's a
+        thorough
+        <a href="https://www.youtube.com/watch?v=nMUMZ5YRxHI">tutorial</a> that
+        explains what it means.
+      </p>
+      <p>
+        Now if you have a high pixel density display such as a retina screen,
+        when you click on play you will see the pixels only filling part of the
+        screen instead of all of the screen. Because by default, pixel density
+        in p5 is set to match the display density.
+      </p>
+
+      <div class="full-width-box">
+        <img
+          style="height:200px"
+          src="https://u01.appmifile.com/images/2018/07/11/d90c3f77-3c4b-40b5-b657-40273be7981b.png"
+        />
+      </div>
+
+      <p>
+        To make the pixel density in p5 adopt to your display density, you would
+        have to set
         <a href="https://p5js.org/reference/#/p5/pixelDensity"
           >pixelDensity()</a
         >
-        to 1.
+        to 1:
       </p>
 
+      <script src="https://gist.github.com/xinemata/21afd4219d644e0084a74fcfb8ca3c13.js"></script>
+
+      <a href="https://editor.p5js.org/xinxin/sketches/N0jYFxmDS"
+        >Source Code</a
+      >
 
       <h3>
         Make a Rainbow Gradient Filter 🌈
       </h3>
-      
+
       <p>
-        By combining the pixel array example with createCapture(), you could create a colored filter 
+        By combining the pixel array example with createCapture(), you could
+        create a rainbow gradient filter similar to the ones you see in social
+        media apps! I'm also going to intergrate it with createSlider(), so that
+        the user can adjust the level of redness in the image:
       </p>
+      
+      <script src="https://gist.github.com/xinemata/72b056c9d1bd9e3184d879237f238b16.js"></script>
+      
+            <a href="https://editor.p5js.org/xinxin/sketches/xSnt8PET1"
+        >Source Code</a
+      >
 
       <h3>Setting Up Your Work Environment</h3>
       <p>
